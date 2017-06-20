@@ -14,7 +14,12 @@
               <li>
                 <img src={{avatar}}>
                 <h3><a>{{username}}</a></h3>
+                {{#job}}
                 <span>{{job}}, {{company}}</span>
+                {{/job}}
+                {{^job}}
+                <span>Available for Hire</span>
+                {{/job}}
               </li>
             {{/users}}
           </ul>
