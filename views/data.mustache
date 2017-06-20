@@ -10,9 +10,12 @@
       <div class="row">
         <div class="col-xs-12">
           <ul class="todo-list">
-            <h1>Index</h1>
             {{#users}}
-              <li>{{username}}</li>
+              <li>
+                <img src={{avatar}}>
+                <h3><a>{{username}}</a></h3>
+                <span>{{job}}, {{company}}</span>
+              </li>
             {{/users}}
           </ul>
         </div>
