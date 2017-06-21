@@ -12,14 +12,14 @@
           <ul class="todo-list">
             {{#users}}
               <li>
-                <img src={{avatar}}>
-                <h3><a>{{username}}</a></h3>
-                {{#job}}
-                <span>{{job}}, {{company}}</span>
-                {{/job}}
-                {{^job}}
-                <span>Available for Hire</span>
-                {{/job}}
+                <a href=/users/{{id}}>  <img src={{avatar}}>
+                  <h2>{{username}}</h2>
+                  {{#job}}
+                  <span>{{job}}, {{company}}</span>
+                  {{/job}}
+                  {{^job}}
+                  <span class="unemployed">Available for Hire</span>
+                  {{/job}}</a>
               </li>
             {{/users}}
           </ul>
