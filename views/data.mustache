@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="/static/styles.css">
   </head>
   <body>
     <div class="container">
@@ -15,7 +15,7 @@
                 <a href=/users/{{id}}>  <img src={{avatar}}>
                   <h2>{{username}}</h2>
                   {{#job}}
-                  <span>{{job}}, {{company}}</span>
+                  <span class="data_job">{{job}}, {{company}}</span>
                   {{/job}}
                   {{^job}}
                   <span class="unemployed">Available for Hire</span>
